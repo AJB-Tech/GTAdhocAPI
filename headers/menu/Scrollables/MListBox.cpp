@@ -98,7 +98,7 @@ namespace pdistd
   			void setItemTemplate(MRenderContext context, MWidget item);
   			Int getItemCount();
 			
-			/** \brief Initializes and adds <count> items of the specified template. Should be called after setItemTemplate if the count is above zero. */
+			/** \brief Initializes and adds <count> items of the specified template. Setting to 0 will clear the ListBox. Setting to anything above 0 requires an item set by setItemTemplate or the project will crash. */
   			void setItemCount(Int count);
   			MWidget getItemWidget(Int index, MRenderContext = nil);
   			void setItemWidget(Int index, MRenderContext context, MWidget widget);
