@@ -97,6 +97,8 @@ namespace pdistd
 
   			void setItemTemplate(MRenderContext context, MWidget item);
   			Int getItemCount();
+			
+			/** \brief Initializes and adds <count> items of the specified template. Should be called after setItemTemplate if the count is above zero. */
   			void setItemCount(Int count);
   			MWidget getItemWidget(Int index, MRenderContext = nil);
   			void setItemWidget(Int index, MRenderContext context, MWidget widget);
